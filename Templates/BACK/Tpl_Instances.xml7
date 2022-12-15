@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<InstancesRoot SchemaVersion="12.1.0">
+<TopologyTree Name="_Root">
+<ObjectInstancesList/>
+<TemplatesList>
+<TemplateInstance Name="QuickStart_fr">
+<Branch/>
+<OriginTemplateName/>
+<ObjectInstancesList/>
+<TemplatesList>
+<TemplateInstance Name="AlarmSyntheses">
+<Branch>AlarmSyntheses</Branch>
+<OriginTemplateName>L_Diagnostic/AlarmSyntheses</OriginTemplateName>
+<ObjectInstancesList/>
+<TemplatesList/>
+</TemplateInstance>
+<TemplateInstance Name="GENERAL">
+<Branch>GENERAL</Branch>
+<OriginTemplateName/>
+<ObjectInstancesList/>
+<TemplatesList>
+<TemplateInstance Name="TRENDS">
+<Branch>TRENDS</Branch>
+<OriginTemplateName>L_General/TRENDS</OriginTemplateName>
+<ObjectInstancesList/>
+<TemplatesList/>
+</TemplateInstance>
+</TemplatesList>
+</TemplateInstance>
+<TemplateInstance Name="System">
+<Branch>System</Branch>
+<OriginTemplateName>L_Diagnostic/System</OriginTemplateName>
+<ObjectInstancesList>
+<ObjectInstance Name="System">
+<ObjectInstanceType>2</ObjectInstanceType>
+<ParametersList>
+<ParameterInstance Name="L_Diagnostic/Domain">
+<DescriptionLang1>Domain</DescriptionLang1>
+<DescriptionLang2>Domain</DescriptionLang2>
+<Value/>
+<Scope>0</Scope>
+</ParameterInstance>
+</ParametersList>
+</ObjectInstance>
+</ObjectInstancesList>
+<TemplatesList/>
+</TemplateInstance>
+</TemplatesList>
+</TemplateInstance>
+</TemplatesList>
+</TopologyTree>
+</InstancesRoot>
+</root>

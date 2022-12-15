@@ -1,0 +1,131 @@
+ASCII32
+W,BEGIN,"Help","Mimic1",""
+	TEMPLATE,"",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+	POSITION,0,0
+	SIZE,1024,768,1024,768,0,0,0,1920,1080,1004,725
+	BACKCOLOREX,240,240,240,0,0,0
+	TITLE,1,"Help","Help"
+	STYLE,1,1,0,1,0,1,0,1,0,1,1,1,0,0,0,0,0
+	GRIDEX,1,1,8,8,100,100,100,0,0,0
+	LAYERS,65535
+	RIGHTS,0,1,0.000000,64.000000,1,65535,0,0
+	INCLUDED,0,0,0,0,0
+	LINK,1,"","","",""
+	LINK,2,"","","",""
+	LINK,3,"","","",""
+	LINK,4,"","","",""
+	LINK,5,"","","",""
+	LINK,6,"","","",""
+	LINK,7,"","","",""
+	LINK,8,"","","",""
+	LINK,9,"","","",""
+	LINK,10,"","","",""
+	TABS,0,3,0,0,500,500,0,0,-1,3,16,16,0,FONT,1,FONT,1
+	NAV,0,0,0,100,100,0,0
+	BACKBMP,"",0,0
+	BACKOBJECT,"",0,0
+	BEFORE_OPEN,"","","",""
+	BEFORE_CLOSE,"","","",""
+	EVENTS,1
+	BINOBJ,"Help.binary"
+W,END
+VBA_REFERENCES,BEGIN
+	"stdole", 2, 0, "{00020430-0000-0000-C000-000000000046}"
+	"FrontVueEx", 2, 0, "{141E3228-8E65-44D3-9F4F-DD4799D613BB}"
+	"MimicControls", 1, 0, "{C959A51F-AAFE-40D5-A4A7-3A00A7AF76B4}"
+VBA_REFERENCES,END
+FONTS,BEGIN
+	FONT,1,16,7,700,0,0,"System",0,0
+	FONT,2,-21,0,400,0,0,"Arial",0,1
+	FONT,3,-16,0,300,0,0,"Segoe UI Light",0,0
+	FONT,4,-19,0,350,0,0,"Segoe UI Semilight",0,0
+FONTS,END
+COLORS,BEGIN
+	COLOREX,1,66,66,66,0,0,0
+	COLOREX,2,0,0,0,0,0,0
+	COLOREX,3,0,0,0,0,0,1
+	COLOREX,4,240,240,240,0,0,0
+	COLOREX,5,192,192,192,0,0,0
+	COLOREX,6,230,230,230,0,0,0
+COLORS,END
+O,BEGIN,RR,"Shape4"
+	B,960,664,24,376,960,664,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,8,8
+O,END
+O,BEGIN,RR,"Shape3"
+	B,960,352,24,224,960,352,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,8,8
+O,END
+O,BEGIN,RR,"Shape1"
+	B,960,200,24,72,960,200,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,8,8
+O,END
+O,BEGIN,T,"Text1"
+	B,33,92,219,116,33,92,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,0,33,92,0,0,FONT,2,"- F6 to show Menus",37,FONT,2,"- F6 to show Menus",37
+O,END
+O,BEGIN,T,"Text2"
+	B,33,124,209,148,33,124,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,0,33,124,0,0,FONT,2,"- F8 to hide Menus",37,FONT,2,"- F8 to hide Menus",37
+O,END
+O,BEGIN,T,"Text3"
+	B,33,156,464,180,33,156,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,0,33,156,0,0,FONT,2,"- Ctrl + Shift + Space to open variable tracking",37,FONT,2,"- Ctrl + Shift + Space to open variable tracking",37
+O,END
+O,BEGIN,T,"Text4"
+	B,33,268,932,328,33,268,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,1,33,268,0,0,FONT,2,"- Menu Display => Workspace Properties... to customize the appearance (scroll bars, full screen, regions...).",84,FONT,2,"- Menu Display => Workspace Properties... to customize the appearance (scroll bars, full screen, regions...).",84
+O,END
+O,BEGIN,T,"Text5"
+	B,33,396,779,420,33,396,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,0,33,396,0,0,FONT,2,"- Menu Configuration => Application Explorer... to modify the project parameters:",84,FONT,2,"- Menu Configuration => Application Explorer... to modify the project parameters:",84
+O,END
+O,BEGIN,T,"Text6"
+	B,33,452,932,520,33,452,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,1,33,452,0,0,FONT,2,"In the communication parameters you can see that the OPC server has been deactivated, for security reasons. If another software has to connect to the OPC server of the supervisor, please activate it.",84,FONT,2,"In the communication parameters you can see that the OPC server has been deactivated, for security reasons. If another software has to connect to the OPC server of the supervisor, please activate it.",84
+O,END
+O,BEGIN,T,"Text7"
+	B,33,548,932,648,33,548,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,1,33,548,0,0,FONT,2,"In the user account settings you can see that the user account configuration files are encrypted for security reasons. The advanced security policy is selected and strong passwords are imposed. All this is configurable at will.",84,FONT,2,"In the user account settings you can see that the user account configuration files are encrypted for security reasons. The advanced security policy is selected and strong passwords are imposed. All this is configurable at will.",84
+O,END
+O,BEGIN,T,"Text8"
+	B,33,688,256,720,33,688,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,4,0,COLOR,4,0,COLOR,2,0,COLOR,2
+	AST,4,2,COLOR,1,COLOR,3,0,COLOR,3,0,COLOR,3,0,COLOR,3,0,COLOR,3,1
+	PP,1,33,688,0,0,FONT,2,"Continue to project",37,FONT,2,"Continue to project",37
+	A,BEGIN,LC,"Anim1",0,0,"@Close this view","@Close this view","0", , 
+		PP,"*","*"
+	A,END
+O,END
+O,BEGIN,T,"Text9"
+	B,320,4,680,28,320,4,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,1,320,4,0,0,FONT,2,"#WT",37,FONT,2,"#WT",37
+O,END
+O,BEGIN,CBX,"AIComboBox_Web_Deployment"
+	B,912,692,976,717,10,195,1,0,6400,0,1,1,1,0,1,0,1
+	ST,5,1,COLOR,2,COLOR,2,1,0,COLOR,5,0,COLOR,5,0,COLOR,2,0,COLOR,2
+	PP,2,2,"",0,1,FONT,3,1,COLOR,6,0,COLOR,2,0,0
+	CI,BEGIN,0,"True","Yes","Yes","1","","","-1","-1","1","1","-1"
+	CI,END
+	CI,BEGIN,0,"False","No","No","0","","","-1","-1","1","1","-1"
+	CI,END
+	A,BEGIN,CBXA,"Anim1",0,0,"","","0", , 
+		PP,"","","@GENERAL.OpenHelpAtStartup","","","","",0,2,0,0
+	A,END
+O,END
+O,BEGIN,T,"Selected_Mimic01_header2"
+	B,576,692,896,717,576,692,65535,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,3,0,COLOR,3,0,COLOR,2,0,COLOR,2
+	PP,1,576,692,0,0,FONT,4,"Open automatically at startup",38,FONT,4,"Open automatically at startup",38
+O,END

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<ParametersRoot Name="" SchemaVersion="12.1.0">
+<Library Name="L_Diagnostic">
+<CategoriesList/>
+<ParametersList>
+<Parameter Name="Domain">
+<nPType>1</nPType>
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue>DIAGNOSTIC</DefaultValue>
+<GblOverwriteMode>0</GblOverwriteMode>
+<GblObjectType>1</GblObjectType>
+<GblPropertyName>Domain</GblPropertyName>
+<GblPropertyDefaultValue/>
+<GblFilters/>
+</Parameter>
+<Parameter Name="TrendPeriod">
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue>10</DefaultValue>
+<Empty>2</Empty>
+<SvPropertyValidation>true</SvPropertyValidation>
+<SvObjectType>7</SvObjectType>
+<SvPropertyName>FilteringPeriod</SvPropertyName>
+</Parameter>
+</ParametersList>
+</Library>
+</ParametersRoot>
+</root>

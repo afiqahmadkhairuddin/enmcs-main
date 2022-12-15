@@ -1,0 +1,56 @@
+ASCII32
+FONTS,BEGIN
+	FONT,1,-21,0,400,0,0,"Arial",0,1
+FONTS,END
+COLORS,BEGIN
+	COLOREX,1,0,0,0,0,0,0
+	COLOREX,2,240,240,240,0,0,0
+	COLOREX,3,0,0,0,0,0,1
+	COLOREX,4,192,192,192,0,0,0
+COLORS,END
+O,BEGIN,GRP,"Symbol1"
+	B,348,116,691,152,291,400,1,0,6400,0,1,0,0,0,1,0,-1
+	O,BEGIN,T,"BtnCMP"
+		B,348,116,652,152,348,116,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		AST,4,2,COLOR,1,COLOR,4,0,COLOR,3,0,COLOR,3,0,COLOR,3,0,COLOR,3,1
+		PP,1,348,116,0,0,FONT,1,"Central Project Management",37,FONT,1,"Central Project Management",37
+		A,BEGIN,RP,"Anim2",0,0,"","","0", , 
+			PP,"L_General/INIT_GENERAL.SCB","","UpdateLanguageValue","","",0,0
+		A,END
+		A,BEGIN,RS,"Anim1",0,0,"@Open Central Project Management dialog","@Open Central Project Management dialog","0", , 
+			PP,"StandardAction,124","","","","",0,0
+		A,END
+		A,BEGIN,VRL,"Anim3",0,0,"","","0", , 
+			PP,"@System.LocalHost.Session.Type",1,1,0,2.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,1,2,0,0.000000,1,2,0,0.000000
+		A,END
+	O,END
+	O,BEGIN,BM,"Help2"
+		B,660,119,691,150,660,150,1,0,6400,0,2,1,1,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		PP,"L_General/DISPLAYS_ICONS_HELP_WHITE_32.png",0,COLOR,2,"","",1,1,0,255
+		A,BEGIN,RP,"Anim3",0,0,"","","0", , 
+			PP,"L_General/INIT_GENERAL.SCB","","UpdateLanguageValue","","",0,0
+		A,END
+		A,BEGIN,VRL,"Anim2",0,0,"","","0", , 
+			PP,"@GENERAL.LANGUAGE",1,2,0,2.000000,1,1,0,3.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,1,2,0,0.000000,1,2,0,0.000000
+		A,END
+		A,BEGIN,RS,"Anim1",0,0,"@Open linked help topic","@Open linked help topic","0", , 
+			PP,"APPLICATION('LOAD','hh.exe','C:\\ARC Informatique\\PcVue 16\\Bin\\SV.chm::/Deployment/CPM_overview.htm')","","","","",0,0
+		A,END
+	O,END
+	O,BEGIN,BM,"Help1"
+		B,660,119,691,150,660,150,1,0,6400,0,2,1,1,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		PP,"L_General/DISPLAYS_ICONS_HELP_WHITE_32.png",0,COLOR,2,"","",1,1,0,255
+		A,BEGIN,RP,"Anim3",0,0,"","","0", , 
+			PP,"L_General/INIT_GENERAL.SCB","","UpdateLanguageValue","","",0,0
+		A,END
+		A,BEGIN,VRL,"Anim2",0,0,"","","0", , 
+			PP,"@GENERAL.LANGUAGE",1,1,0,2.000000,1,2,0,3.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,0,1,0,0.000000,1,2,0,0.000000,1,2,0,0.000000
+		A,END
+		A,BEGIN,RS,"Anim1",0,0,"@Ouvre le chapitre de l'aide … ce propos","@Ouvre le chapitre de l'aide … ce propos","0", , 
+			PP,"APPLICATION('LOAD','hh.exe','C:\\ARC Informatique\\PcVue 16\\Bin\\fr\\SV.fr.chm::/Deployment/CPM_overview.htm')","","","","",0,0
+		A,END
+	O,END
+O,END

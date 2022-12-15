@@ -1,0 +1,13 @@
+BEGIN_PER,1,"",,,,Trend1
+CURVE,1,"System.Localhost.Mimic.OpenCount","Temperature FLOOR_01 ROOM_001",System.Localhost.Mimic.OpenCount,0.0000000000000000e+00,5.0000000000000000e+01,1,1,0,255,0,0,1,0,255,0,0,0,1
+CURVE,2,"System.Localhost.resource.FreeVirtualMemory","Temperature FLOOR_01 ROOM_002",System.Localhost.resource.FreeVirtualMemory,0.0000000000000000e+00,4.0000000000000000e+06,1,1,0,0,255,0,1,0,0,255,0,0,1
+CURVE,3,"System.Localhost.resource.GDI","Temperature FLOOR_02 ROOM_001",System.Localhost.resource.GDI,0.0000000000000000e+00,1.0000000000000000e+04,1,1,0,255,255,0,1,0,255,255,0,0,1
+CURVE,4,"System.Localhost.resource.Handles","Temperature FLOOR_02 ROOM_002",System.Localhost.resource.Handles,0.0000000000000000e+00,1.0000000000000000e+04,1,0,0,0,255,255,1,0,0,255,255,0,1
+CURVE,5,"System.Localhost.resource.MemoryUsage","",System.Localhost.resource.MemoryUsage,0.0000000000000000e+00,4.0000000000000000e+06,1,0,0,0,0,255,1,0,0,0,255,0,1
+CURVE,6,"System.Localhost.resource.RAM","",System.Localhost.resource.RAM,0.0000000000000000e+00,1.0000000000000000e+02,1,1,0,255,0,255,1,0,255,0,255,0,1
+CURVE,7,"System.Localhost.resource.Threads","",System.Localhost.resource.Threads,0.0000000000000000e+00,2.0000000000000000e+03,1,1,0,128,128,0,1,0,128,128,0,0,1
+CURVE,8,"System.Localhost.resource.User","",System.Localhost.resource.User,0.0000000000000000e+00,1.0000000000000000e+04,1,1,0,160,160,160,1,0,160,160,160,0,1
+PLAY,1.8000000000000000e+05
+
+GRID,1,1,2,15,1
+

@@ -1,0 +1,148 @@
+ASCII32
+FONTS,BEGIN
+	FONT,1,-21,0,400,0,0,"Arial",0,1
+	FONT,2,-21,0,400,0,0,"Arial",0,0
+	FONT,3,16,7,700,0,0,"System",0,0
+FONTS,END
+COLORS,BEGIN
+	COLOREX,1,0,0,0,0,0,0
+	COLOREX,2,192,192,192,0,0,0
+	COLOREX,3,105,105,105,0,0,0
+	COLOREX,4,255,255,255,0,0,0
+	COLOREX,5,240,240,240,0,0,0
+	COLOREX,6,0,0,0,0,0,1
+	COLOREX,7,160,160,160,0,0,0
+	COLOREX,8,0,0,0,0,177,0
+	COLOREX,9,255,0,0,0,0,0
+COLORS,END
+O,BEGIN,GRP,"Symbol1"
+	B,312,255,1024,332,312,255,1,0,6400,0,1,0,0,0,1,0,-1
+	O,BEGIN,T,"TxtConfigName"
+		B,578,255,741,291,578,255,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		AST,5,2,COLOR,1,COLOR,2,0,COLOR,4,0,COLOR,4,0,COLOR,3,0,COLOR,3,0
+		PP,1,578,255,0,0,FONT,1,"Config name",37,FONT,1,"Config name",37
+		A,BEGIN,ST,"Anim1",0,0,"@Name of the TrendViewer configuration","@Name of the TrendViewer configuration","0", , 
+			PP,"ConfigName",1,0,1,0,0,1
+		A,END
+	O,END
+	O,BEGIN,T,"BtnSave"
+		B,750,255,894,291,750,255,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,5,0,COLOR,5,0,COLOR,1,0,COLOR,1
+		AST,4,2,COLOR,1,COLOR,2,0,COLOR,6,0,COLOR,6,0,COLOR,6,0,COLOR,6,1
+		PP,1,750,255,0,0,FONT,1,"Save",37,FONT,1,"Save",37
+		A,BEGIN,RP,"Anim1",0,0,"@Save or add the configuration if it does not exist","@Save or add the configuration if it does not exist","0", , 
+			PP,"L_General/TRENDS.SCB","*","SaveConfig","","",0,0
+		A,END
+	O,END
+	O,BEGIN,T,"BtnDelete"
+		B,904,255,1024,291,904,255,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,5,0,COLOR,5,0,COLOR,1,0,COLOR,1
+		AST,4,2,COLOR,1,COLOR,2,0,COLOR,6,0,COLOR,6,0,COLOR,6,0,COLOR,6,1
+		PP,1,904,255,0,0,FONT,1,"Delete",37,FONT,1,"Delete",37
+		A,BEGIN,RP,"Anim1",0,0,"@Delete the configuration","@Delete the configuration","0", , 
+			PP,"L_General/TRENDS.SCB","*","DeleteConfig","","",0,0
+		A,END
+	O,END
+	O,BEGIN,CBX,"AICB_ConfigName"
+		B,312,255,568,291,10,195,1,0,6400,0,2,1,1,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		AST,5,2,COLOR,1,COLOR,2,0,COLOR,4,0,COLOR,4,0,COLOR,7,0,COLOR,7,0
+		PP,1,1,"",1,1,FONT,2,0,COLOR,4,0,COLOR,1,0,0
+		CI,BEGIN,0,"Resource","Resource","Resource","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"Empty","Empty","Empty","1","","","-1","-1","1","1","-1"
+		CI,END
+		A,BEGIN,CBXA,"Anim1",0,0,"","","0", , 
+			PP,"ConfigFileName","ComboBoxIndex","","L_General/TRENDS.SCB","#S","LoadConfig","",1,1,0,0
+		A,END
+	O,END
+	O,BEGIN,GRP,"Translate"
+		B,980,296,1024,332,980,296,1,0,6400,0,2,0,0,0,1,0,-1
+		O,BEGIN,R,"Shape1"
+			B,1024,296,980,332,1024,296,1,0,6400,0,4,0,0,0,1,0,-1
+			ST,0,1,COLOR,8,COLOR,8,0,0,COLOR,8,0,COLOR,8,0,COLOR,1,0,COLOR,1
+		O,END
+		O,BEGIN,BM,"Bitmap2"
+			B,987,299,1018,330,987,330,1,0,6400,0,4,0,0,0,1,0,-1
+			ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+			PP,"L_General/NAV_ICONS_PREMIUM_WHITE_32_LANGUAGE.png",0,COLOR,5,"","",1,1,0,255
+		O,END
+		A,BEGIN,RP,"Anim1",0,0,"@Click to translate the Comboboxes in the other language. The mimic will be refreshed.","@Click to translate the Comboboxes in the other language. The mimic will be refreshed.","0", , 
+			PP,"L_General/TRENDS.SCB","*","TranslateCbFiles","","",0,0
+		A,END
+	O,END
+	O,BEGIN,BM,"RefreshTrends"
+		B,927,299,958,330,927,330,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		PP,"L_General/COMMANDS_ICONS_AUTO_WHITE_32.png",0,COLOR,5,"","",1,1,0,255
+		A,BEGIN,RP,"Anim1",0,0,"@Update the primary trends list","@Update the primary trends list","0", , 
+			PP,"L_General/TRENDS.SCB","*","FillTrendCombobox","","",0,0
+		A,END
+	O,END
+	O,BEGIN,CBX,"AICB_TrendsList"
+		B,362,296,904,332,10,195,1,0,6400,0,2,1,1,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		AST,5,2,COLOR,1,COLOR,2,0,COLOR,4,0,COLOR,4,0,COLOR,7,0,COLOR,7,0
+		PP,1,1,"",-1,1,FONT,2,0,COLOR,4,0,COLOR,1,1,1
+		CI,BEGIN,0,"System.Localhost.Mimic.OpenCount","System.Localhost.Mimic.OpenCount","System.Localhost.Mimic.OpenCount","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.FreeVirtualMemory","System.Localhost.resource.FreeVirtualMemory","System.Localhost.resource.FreeVirtualMemory","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.GDI","System.Localhost.resource.GDI","System.Localhost.resource.GDI","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.Handles","System.Localhost.resource.Handles","System.Localhost.resource.Handles","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.MemoryUsage","System.Localhost.resource.MemoryUsage","System.Localhost.resource.MemoryUsage","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.RAM","System.Localhost.resource.RAM","System.Localhost.resource.RAM","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.Threads","System.Localhost.resource.Threads","System.Localhost.resource.Threads","0","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"System.Localhost.resource.User","System.Localhost.resource.User","System.Localhost.resource.User","0","","","-1","-1","1","1","-1"
+		CI,END
+		A,BEGIN,CBXA,"Anim1",0,0,"","","0", , 
+			PP,"TrendsFileName","","","","","","",0,0,0,0
+		A,END
+	O,END
+	O,BEGIN,R,"ProgressBar"
+		B,1024,291,580,255,1024,291,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,1,COLOR,1,0,3,COLOR,2,3,COLOR,2,0,COLOR,1,0,COLOR,1
+		A,BEGIN,BR,"Anim1",0,0,"","","0", , 
+			PP,"ProgressBar",0,0,COLOR,9,COLOR,9,COLOR,2,COLOR,2,1,COLOR,6,COLOR,6,3,1
+			ADVSCALE,2,0,2,100
+		A,END
+		A,BEGIN,VB,"Anim2",0,0,"","","0", , 
+			PP,"Cancel",1,1,0,1,2,0,1,2,0
+		A,END
+	O,END
+	O,BEGIN,T,"Text1"
+		B,580,255,1024,291,580,255,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,6,0,COLOR,6,0,COLOR,1,0,COLOR,1
+		AST,7,2,COLOR,1,COLOR,6,0,COLOR,7,0,COLOR,7,0,COLOR,4,0,COLOR,4,0
+		PP,1,580,255,0,0,FONT,1,"Update in progress. Click to cancel.",37,FONT,1,"Update in progress. Click to cancel.",37
+		A,BEGIN,VB,"Anim1",0,0,"","","0", , 
+			PP,"Cancel",1,1,0,1,2,0,1,2,0
+		A,END
+		A,BEGIN,SB,"Anim2",0,0,"","","0", , 
+			PP,"Cancel",2,0,0,0,0.000000
+		A,END
+	O,END
+	O,BEGIN,LBOX,"AIOptionLanguage"
+		B,332,332,332,332,10,195,1,0,6400,0,2,1,1,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		AST,5,2,COLOR,1,COLOR,2,0,COLOR,4,0,COLOR,4,0,COLOR,7,0,COLOR,7,0
+		PP,2,2,"",0,0,FONT,3,0,COLOR,4,0,COLOR,1
+		CI,BEGIN,0,"","","","1","","","-1","-1","1","1","-1"
+		CI,END
+		CI,BEGIN,0,"","","","0","","","-1","-1","1","1","-1"
+		CI,END
+		A,BEGIN,LBOXA,"Anim1",0,0,"","","0", , 
+			PP,"","","","L_General/TRENDS.SCB","#S","Main","#B2,#B3",1,0,0,0,0
+		A,END
+	O,END
+	O,BEGIN,S,"SymbolTrendID"
+		B,312,300,354,329,312,300,1,0,6400,0,2,0,0,0,1,0,-1
+		PP,"L_General/TRENDS_SetIndexAndAdd_Remove","",312,300,354,329,1,0,0,1,0,0,1,0,-304,-1287,-304,-1287
+	O,END
+O,END

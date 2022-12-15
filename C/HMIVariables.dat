@@ -1,0 +1,4 @@
+Bit,GENERAL.TRENDS.Cancel,1,"Pour annuler un rafraichissement des tendances","To cancel a trends refresh",,1,,,,,
+Register,GENERAL.TRENDS.ProgressBar,1,"","",,1,,,,,0,100,"","","",""
+Register,GENERAL.TRENDS.TimeToUpdateTrends,1,"","",,1,,,,,0,99999999999999,"","","",""
+Register,GENERAL.TRENDS.TrendID,1,"Position de la courbe dans le trend viewer","Curve position in trend viewer",,1,,,,,1,100,"","","",""

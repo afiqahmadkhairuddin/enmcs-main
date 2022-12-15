@@ -1,0 +1,412 @@
+ASCII32
+W,BEGIN,"Trends","Mimic3",""
+	TEMPLATE,"TEMPLATE_MAIN_DISPLAY",1,1,1,0,1,0,0,0,0,1,0,0,1,0,0,0
+	POSITION,0,0
+	SIZE,1920,1080,1920,1080,0,0,0,1920,1080,1920,1080
+	BACKCOLOREX,240,240,240,0,0,0
+	TITLE,0,"TRENDS","TRENDS"
+	STYLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	GRIDEX,1,1,4,4,100,100,100,0,0,0
+	LAYERS,1
+	RIGHTS,0,1,0.000000,64.000000,1,65535,0,0
+	INCLUDED,0,0,0,0,0
+	LINK,1,"Mimic 01","","Mimic 01 Title","Mimic 01 Title"
+	LINK,2,"Mimic 02","","Mimic 02 Title","Mimic 02 Title"
+	LINK,3,"Mimic 03","","Mimic 03 Title","Mimic 03 Title"
+	LINK,4,"Mimic 04","","Mimic 04 Title","Mimic 04 Title"
+	LINK,5,"Mimic 05","","Mimic 05 Title","Mimic 05 Title"
+	LINK,6,"Mimic 06","","Mimic 06 Title","Mimic 06 Title"
+	LINK,7,"Mimic 07","","Mimic 07 Title","Mimic 07 Title"
+	LINK,8,"Mimic 08","","Mimic 08 Title","Mimic 08 Title"
+	LINK,9,"Mimic 09","","Mimic 09 Title","Mimic 09 Title"
+	LINK,10,"Mimic 10","","Mimic 10 Title","Mimic 10 Title"
+	TABS,0,3,0,0,100,100,0,0,-1,0,16,16,0,FONT,1,FONT,1
+	NAV,0,0,0,100,100,0,0
+	BACKBMP,"",0,0
+	BACKOBJECT,"",0,0
+	BEFORE_OPEN,"","","",""
+	BEFORE_CLOSE,"","","",""
+	EVENTS,1
+	BINOBJ,"Trends.binary"
+W,END
+VBA_HOSTPROJECT,BEGIN
+	Option Explicit
+	
+VBA_HOSTPROJECT,END
+VBA_REFERENCES,BEGIN
+	"stdole", 2, 0, "{00020430-0000-0000-C000-000000000046}"
+	"UITRDLib", 1, 0, "{E18D5E2F-125B-11D1-A089-0020AF29DCAE}"
+	"MimicControls", 1, 0, "{C959A51F-AAFE-40D5-A4A7-3A00A7AF76B4}"
+VBA_REFERENCES,END
+FONTS,BEGIN
+	FONT,1,16,7,700,0,0,"System",0,0
+	FONT,2,-16,0,400,0,0,"MS Shell Dlg",0,0
+	FONT,3,12,0,400,0,0,"Arial",0,1
+	FONT,4,-21,0,400,0,0,"Arial",0,1
+	FONT,5,-21,0,400,0,0,"Arial",0,0
+FONTS,END
+COLORS,BEGIN
+	COLOREX,1,0,0,0,0,0,0
+	COLOREX,2,192,192,192,0,0,0
+	COLOREX,3,50,50,50,0,0,0
+	COLOREX,4,240,240,240,0,0,0
+	COLOREX,5,255,255,255,0,0,0
+	COLOREX,6,100,100,100,0,0,0
+	COLOREX,7,140,140,140,0,0,0
+	COLOREX,8,255,0,0,0,0,0
+	COLOREX,9,0,255,0,0,0,0
+	COLOREX,10,255,255,0,0,0,0
+	COLOREX,11,0,255,255,0,0,0
+	COLOREX,12,0,0,255,0,0,0
+	COLOREX,13,255,0,255,0,0,0
+	COLOREX,14,128,128,0,0,0,0
+	COLOREX,15,160,160,160,0,0,0
+	COLOREX,16,105,105,105,0,0,0
+	COLOREX,17,0,0,0,0,0,1
+	COLOREX,18,0,0,0,0,177,0
+COLORS,END
+O,BEGIN,TRD,"Trend1"
+	B,288,185,1879,887,10,195,65535,0,6400,0,1,1,1,0,1,1,1
+	ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+	TOOLBAR,1,16384,A_PLAY,A_PAUSE,SEPARATOR,A_IMPLODE,A_EXPLODE,A_RESTORE,SEPARATOR,A_PRINT,SEPARATOR,C_SELECT,C_CROSS,C_ZOOM_HV,C_ZOOM_H,C_ZOOMBACK,C_ZOOMRESET,C_NORMAL,SEPARATOR,A_DEFAULTCONF,A_CHANGEPRD,A_OFFSET,SEPARATOR,A_CLRQST,A_HISTORICAL,SEPARATOR,A_EXPORT
+	SCROLL,1,17
+	LINE,FONT,2,COLOR,3
+	SCALES,3.000000,1,1,0,1
+	EXEC,10000,0,1.000000,2,0.500000,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,1,1,0,1,-1,0,0,0
+	LEGEND,FONT,3,1
+	COLORCOLUMN,1,COLOR,5, COLOR, 4, 185
+	COLUMN0,0,,0,,0,
+	COLUMN1,1,Visible,0,,1,
+	COLUMN2,2,Scale,0,,1,
+	COLUMN3,3,Color,0,,1,
+	COLUMN4,23,Description,0,,0,
+	COLUMN5,13,Temps r‚el,0,,0,
+	COLUMN6,18,Minimum,0,,0,
+	COLUMN7,19,Maximum,0,,0,
+	COLUMN8,20,Moyenne,0,,0,
+	COLUMN9,14,Curseur,0,,0,
+	COLUMN10,25,Horodate curseur,0,,0,
+	COLUMN11,-2,Average,0,,0,
+	COLUMN12,-2,Cursor timestamp,0,,0,
+	COLUMN13,-2,Cursor timestamp,0,,0,
+	COLUMN14,-2,Average,0,,0,
+	COLUMN15,-2,Cursor timestamp,0,,0,
+	COLUMN16,-2,,0,,0,
+	COLUMN17,-2,,0,,0,
+	COLUMN18,-2,,0,,0,
+	COLUMN19,-2,,0,,0,
+	COLUMN20,-2,,0,,0,
+	COLUMN21,-2,,0,,0,
+	COLUMN22,-2,,0,,0,
+	COLUMN23,-2,,0,,0,
+	COLUMN24,-2,,0,,0,
+	COLUMN25,-2,,0,,0,
+	COLUMN26,-2,,0,,0,
+	COLUMN27,-2,,0,,0,
+	COLUMN28,-2,,0,,0,
+	GRID,1,1,COLOR,7,COLOR,6,COLOR,7,COLOR,6,0,0,0,0,1,2,15,1
+	PRINT,COLOR,5,1,1
+	ACCESS,1,0,0,1,0,-1456074982
+	TIMESCALE_TITLES,0,,,,,,,,
+	FORMAT,#M/#D/#Y #h:#m:#s,#M/#D/#Y #h:#m:#s,3,0,0,10000.000000,0.000100,0,#M/#D/#Y
+	A,BEGIN,CURVE,"Anim1",0,0,"","","0", , 
+		PP,"System.Localhost.Mimic.OpenCount",1,"System.Localhost.Mimic.OpenCount","Temperature FLOOR_01 ROOM_001"
+		STYLE,0,1,COLOR,8,0.000000,50.000000,1,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,8
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim2",0,0,"","","0", , 
+		PP,"System.Localhost.resource.FreeVirtualMemory",1,"System.Localhost.resource.FreeVirtualMemory","Temperature FLOOR_01 ROOM_002"
+		STYLE,0,1,COLOR,9,0.000000,4000000.000000,1,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,9
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim3",0,0,"","","0", , 
+		PP,"System.Localhost.resource.GDI",1,"System.Localhost.resource.GDI","Temperature FLOOR_02 ROOM_001"
+		STYLE,0,1,COLOR,10,0.000000,10000.000000,1,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,10
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim4",0,0,"","","0", , 
+		PP,"System.Localhost.resource.Handles",1,"System.Localhost.resource.Handles","Temperature FLOOR_02 ROOM_002"
+		STYLE,0,1,COLOR,11,0.000000,10000.000000,0,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,11
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim5",0,0,"","","0", , 
+		PP,"System.Localhost.resource.MemoryUsage",1,"System.Localhost.resource.MemoryUsage",""
+		STYLE,0,1,COLOR,12,0.000000,4000000.000000,0,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,12
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim6",0,0,"","","0", , 
+		PP,"System.Localhost.resource.RAM",1,"System.Localhost.resource.RAM",""
+		STYLE,0,1,COLOR,13,0.000000,100.000000,1,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,13
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim7",0,0,"","","0", , 
+		PP,"System.Localhost.resource.Threads",1,"System.Localhost.resource.Threads",""
+		STYLE,0,1,COLOR,14,0.000000,2000.000000,1,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,14
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,BEGIN,CURVE,"Anim8",0,0,"","","0", , 
+		PP,"System.Localhost.resource.User",1,"System.Localhost.resource.User",""
+		STYLE,0,1,COLOR,15,0.000000,10000.000000,1,0,0,0,0,0,0,0,0
+		STYLENS,2,1,COLOR,15
+		THLDMGR,-1,0
+		THLD,0,0,0,0,1,0.000000,0
+		THLD,1,0,0,0,1,0.000000,0
+		THLD,2,0,0,0,1,0.000000,0
+		THLD,3,0,0,0,1,0.000000,0
+		THLD,4,0,0,0,1,0.000000,0
+		THLD,5,0,0,0,1,0.000000,0
+	A,END
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+	A,NOP
+O,END
+O,BEGIN,T,"TxtConfigName"
+	B,510,100,673,136,510,100,1,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+	AST,5,2,COLOR,1,COLOR,2,0,COLOR,5,0,COLOR,5,0,COLOR,16,0,COLOR,16,0
+	PP,1,510,100,0,0,FONT,4,"Config name",37,FONT,4,"Config name",37
+	A,BEGIN,ST,"Anim1",0,0,"@Name of the TrendViewer configuration","@Name of the TrendViewer configuration","0", , 
+		PP,"ConfigName",1,0,1,0,0,1
+	A,END
+O,END
+O,BEGIN,T,"BtnSave"
+	B,682,100,826,136,682,100,1,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,4,0,COLOR,4,0,COLOR,1,0,COLOR,1
+	AST,4,2,COLOR,1,COLOR,2,0,COLOR,17,0,COLOR,17,0,COLOR,17,0,COLOR,17,1
+	PP,1,682,100,0,0,FONT,4,"Save",37,FONT,4,"Save",37
+	A,BEGIN,RP,"Anim1",0,0,"@Save or add the configuration if it does not exist","@Save or add the configuration if it does not exist","0", , 
+		PP,"L_General/TRENDS.SCB","*","SaveConfig","","",0,0
+	A,END
+O,END
+O,BEGIN,T,"BtnDelete"
+	B,836,100,956,136,836,100,1,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,4,0,COLOR,4,0,COLOR,1,0,COLOR,1
+	AST,4,2,COLOR,1,COLOR,2,0,COLOR,17,0,COLOR,17,0,COLOR,17,0,COLOR,17,1
+	PP,1,836,100,0,0,FONT,4,"Delete",37,FONT,4,"Delete",37
+	A,BEGIN,RP,"Anim1",0,0,"@Delete the configuration","@Delete the configuration","0", , 
+		PP,"L_General/TRENDS.SCB","*","DeleteConfig","","",0,0
+	A,END
+O,END
+O,BEGIN,CBX,"AICB_ConfigName"
+	B,244,100,500,136,10,195,1,0,6400,0,1,1,1,0,1,0,2
+	ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+	AST,5,2,COLOR,1,COLOR,2,0,COLOR,5,0,COLOR,5,0,COLOR,15,0,COLOR,15,0
+	PP,1,1,"",1,1,FONT,5,0,COLOR,5,0,COLOR,1,0,0
+	A,BEGIN,CBXA,"Anim1",0,0,"","","0", , 
+		PP,"ConfigFileName","ComboBoxIndex","","L_General/TRENDS.SCB","#S","LoadConfig","",1,1,0,0
+	A,END
+O,END
+O,BEGIN,GRP,"Translate"
+	B,912,141,956,177,912,141,1,0,6400,0,1,0,0,0,1,0,-1
+	O,BEGIN,R,"Shape1"
+		B,956,141,912,177,956,141,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,0,1,COLOR,18,COLOR,18,0,0,COLOR,18,0,COLOR,18,0,COLOR,1,0,COLOR,1
+	O,END
+	O,BEGIN,BM,"Bitmap2"
+		B,919,144,950,175,919,175,1,0,6400,0,2,0,0,0,1,0,-1
+		ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+		PP,"L_General/NAV_ICONS_PREMIUM_WHITE_32_LANGUAGE.png",0,COLOR,4,"","",1,1,0,255
+	O,END
+	A,BEGIN,RP,"Anim1",0,0,"@Click to translate the Comboboxes in the other language. The mimic will be refreshed.","@Click to translate the Comboboxes in the other language. The mimic will be refreshed.","0", , 
+		PP,"L_General/TRENDS.SCB","*","TranslateCbFiles","","",0,0
+	A,END
+O,END
+O,BEGIN,BM,"RefreshTrends"
+	B,859,144,890,175,859,175,1,0,6400,0,1,0,0,0,1,0,-1
+	ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+	PP,"L_General/COMMANDS_ICONS_AUTO_WHITE_32.png",0,COLOR,4,"","",1,1,0,255
+	A,BEGIN,RP,"Anim1",0,0,"@Update the primary trends list","@Update the primary trends list","0", , 
+		PP,"L_General/TRENDS.SCB","*","FillTrendCombobox","","",0,0
+	A,END
+O,END
+O,BEGIN,CBX,"AICB_TrendsList"
+	B,294,141,836,177,10,195,1,0,6400,0,1,1,1,0,1,0,3
+	ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+	AST,5,2,COLOR,1,COLOR,2,0,COLOR,5,0,COLOR,5,0,COLOR,15,0,COLOR,15,0
+	PP,1,1,"",-1,1,FONT,5,0,COLOR,5,0,COLOR,1,1,1
+	A,BEGIN,CBXA,"Anim1",0,0,"","","0", , 
+		PP,"TrendsFileName","","","","","","",0,0,0,0
+	A,END
+O,END
+O,BEGIN,R,"ProgressBar"
+	B,956,136,512,100,956,136,1,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,3,COLOR,2,3,COLOR,2,0,COLOR,1,0,COLOR,1
+	A,BEGIN,BR,"Anim1",0,0,"","","0", , 
+		PP,"ProgressBar",0,0,COLOR,8,COLOR,8,COLOR,2,COLOR,2,1,COLOR,17,COLOR,17,3,1
+		ADVSCALE,2,0,2,100
+	A,END
+	A,BEGIN,VB,"Anim2",0,0,"","","0", , 
+		PP,"Cancel",1,1,0,1,2,0,1,2,0
+	A,END
+O,END
+O,BEGIN,T,"Text2"
+	B,512,100,956,136,512,100,1,0,6400,0,1,0,0,0,1,0,-1
+	ST,0,1,COLOR,1,COLOR,1,0,0,COLOR,17,0,COLOR,17,0,COLOR,1,0,COLOR,1
+	AST,7,2,COLOR,1,COLOR,17,0,COLOR,15,0,COLOR,15,0,COLOR,5,0,COLOR,5,0
+	PP,1,512,100,0,0,FONT,4,"Update in progress. Click to cancel.",37,FONT,4,"Update in progress. Click to cancel.",37
+	A,BEGIN,VB,"Anim1",0,0,"","","0", , 
+		PP,"Cancel",1,1,0,1,2,0,1,2,0
+	A,END
+	A,BEGIN,SB,"Anim2",0,0,"","","0", , 
+		PP,"Cancel",2,0,0,0,0.000000
+	A,END
+O,END
+O,BEGIN,LBOX,"AIOptionLanguage"
+	B,264,177,264,177,10,195,1,0,6400,0,1,1,1,0,1,0,4
+	ST,5,1,COLOR,1,COLOR,1,1,0,COLOR,2,0,COLOR,2,0,COLOR,1,0,COLOR,1
+	AST,5,2,COLOR,1,COLOR,2,0,COLOR,5,0,COLOR,5,0,COLOR,15,0,COLOR,15,0
+	PP,2,2,"",0,0,FONT,1,0,COLOR,5,0,COLOR,1
+	CI,BEGIN,0,"","","","1","","","-1","-1","1","1","-1"
+	CI,END
+	CI,BEGIN,0,"","","","0","","","-1","-1","1","1","-1"
+	CI,END
+	A,BEGIN,LBOXA,"Anim1",0,0,"","","0", , 
+		PP,"","","","L_General/TRENDS.SCB","#S","Main","#B2,#B3",1,0,0,0,0
+	A,END
+O,END
+O,BEGIN,S,"SymbolTrendID"
+	B,244,145,286,174,244,145,1,0,6400,0,1,0,0,0,1,0,-1
+	PP,"L_General/TRENDS_SetIndexAndAdd_Remove","",244,145,286,174,1,0,0,1,0,0,1,0,-440,-1597,-440,-1597
+O,END
+O,BEGIN,S,"Group1"
+	B,244,728,280,883,244,728,1,0,6400,0,1,0,0,0,1,0,-1
+	PP,"L_General/TRENDS_Add_Remove_8","GENERAL.TRENDS",244,728,280,883,1,0,0,1,0,0,1,0,574,2372,574,2372
+O,END

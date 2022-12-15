@@ -1,0 +1,16 @@
+'#############################################################
+'PROGRAM : PROGEXECUTED.scb
+'Loaded and executed at start-up fron the program 'INIT.scb'
+'Charg‚ et ex‚cut‚ au d‚narrage depuis le programme 'INIT.scb'
+'Display help mimic at startup
+'Ouvre le synoptique d’aide au démarrage
+'#############################################################
+
+sub main()
+
+	If (CmpString(@GENERAL.OpenHelpAtStartup, "True")==0) Then 
+		Window("OPEN", "Help", "" );
+	End If
+
+end sub
+

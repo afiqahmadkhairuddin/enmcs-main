@@ -1,0 +1,10 @@
+[General]
+DefaultDataConnectionType=2
+DefaultConnectionString=Provider=SQLOLEDB;Data Source=.\SQLEXPRESS;Integrated Security=SSPI
+DefaultSecureConnectionString=
+AutomaticStart=1
+UseDefaultLocalDatabasesDir=1
+LocalDatabasesDir=
+HistoricalLanguage=25
+LogOpcGroupUpdateRate=0
+LogOpcGroupDeadband=0.00
